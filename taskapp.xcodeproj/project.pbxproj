@@ -14,6 +14,7 @@
 		CA3C5EAF1E2DD9630070A0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3C5EAE1E2DD9630070A0C1 /* Assets.xcassets */; };
 		CA3C5EB21E2DD9630070A0C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3C5EB01E2DD9630070A0C1 /* LaunchScreen.storyboard */; };
 		CA3C5EBA1E2DE14A0070A0C1 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C5EB91E2DE14A0070A0C1 /* InputViewController.swift */; };
+		CAC2CCED1E2DFF8800D1BE61 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2CCEC1E2DFF8800D1BE61 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CA3C5EB11E2DD9630070A0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA3C5EB31E2DD9630070A0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3C5EB91E2DE14A0070A0C1 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		CAC2CCEC1E2DFF8800D1BE61 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				CA3C5EAE1E2DD9630070A0C1 /* Assets.xcassets */,
 				CA3C5EB01E2DD9630070A0C1 /* LaunchScreen.storyboard */,
 				CA3C5EB31E2DD9630070A0C1 /* Info.plist */,
+				CAC2CCEC1E2DFF8800D1BE61 /* Task.swift */,
 			);
 			path = taskapp;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 				TargetAttributes = {
 					CA3C5EA31E2DD9630070A0C1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ML63AP5SQ7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -214,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC2CCED1E2DFF8800D1BE61 /* Task.swift in Sources */,
 				CA3C5EBA1E2DE14A0070A0C1 /* InputViewController.swift in Sources */,
 				CA3C5EAA1E2DD9630070A0C1 /* ViewController.swift in Sources */,
 				CA3C5EA81E2DD9630070A0C1 /* AppDelegate.swift in Sources */,
@@ -337,8 +342,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2D000289F451E84EB8E1F182 /* Pods-taskapp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ML63AP5SQ7;
 				INFOPLIST_FILE = taskapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.wkojiro.taskapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,8 +358,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A88CA613036AAA91FCF58083 /* Pods-taskapp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ML63AP5SQ7;
 				INFOPLIST_FILE = taskapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.wkojiro.taskapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +389,7 @@
 				CA3C5EB81E2DD9630070A0C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
