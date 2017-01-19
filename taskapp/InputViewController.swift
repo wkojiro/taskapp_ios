@@ -52,7 +52,7 @@ class InputViewController: UIViewController {
             self.task.date = self.dataPicker.date as NSDate
             self.realm.add(self.task, update: true)
         }
-        
+        setNotification(task: task)
         super.viewWillDisappear(animated)
     }
     
@@ -76,7 +76,7 @@ class InputViewController: UIViewController {
         // ローカル通知を登録
         let center = UNUserNotificationCenter.current()
         center.add(request) { (error) in
-            print(error!)
+            print(error)
         }
         
         // 未通知のローカル通知一覧をログ出力
